@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --var1: black;
+    --var2: white;
+}
+.dark{
+    --var1: white;
+    --var2: black;
+}
+body{
+    background-color: var(--var2);
+}
+.container{
+    margin-top: 5px;
+}
+#btn-mode{
+    float:right;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    /* margin-right: 30px; */
+}
+.heading{
+    border: 3px solid var(--var1);
+    padding: 8px;
+    font-family: 'Rubik Doodle Shadow', system-ui;
+    font-size: 1.5rem;
+    background-color: rgba(81, 235, 255, 0.89);
+    box-shadow: 10px 10px var(--var1);
+    width: max-content;
+    border-radius: 8px;
+    margin: auto;
+}
+.header{
+    margin: 30px 0 20px 0 ;
+    display: flex;
+    justify-content: center;
+}
+.inp{
+    width: 30%;
+    padding: 5px;
+    font-size: 20px;
+    font-family: 'Lucida Sans';
+    border-radius: 5px;
+    border: 3px solid var(--var1);
+    vertical-align: middle;
+}
+.add{
+    color: var(--var1);
+}
+.fa-sun{
+    color: var(--var1);
+}
+.btn{
+    background: none;
+    border: none;
+    font-size: 35px;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.todos-content{
+    display: flex;
+    justify-content: center;
+}
+#todo-list{
+    list-style: none;
+}
+.item{
+    border: 2px solid var(--var1);
+    margin: 4px 0 4px 0;
+    border-radius: 5px;
+    box-shadow: 3px 2px var(--var1);
+    padding: 5px;
+    background-color: rgba(255, 252, 64, 0.932);
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
